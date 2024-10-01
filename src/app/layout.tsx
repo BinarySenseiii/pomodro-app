@@ -1,39 +1,20 @@
-import React from 'react'
-import { type Viewport } from 'next'
+import { Metadata } from 'next';
 
-import '~/core/styles/globals.css'
+import './globals.css';
 
-import { fontSans } from '~/core/components/design-system/fonts'
-import config from '~/core/constant/config'
-import { getSEOTags } from '~/core/lib/seo'
-import { cn } from '~/core/lib/utils'
-import AppProviders from '~/core/providers'
+import { Inter } from 'next/font/google';
 
-export const viewport: Viewport = {
-  themeColor: config.theme,
-  width: 'device-width',
-  initialScale: 1,
-}
+const inter = Inter({ subsets: ['latin'] });
 
-// This adds default SEO tags to all pages in our app.
-// You can override them in each page passing params to getSOTags() function.
-export const metadata = getSEOTags()
+export const metadata: Metadata = {
+  title: 'Pomodoro Timer',
+  description: `Stay focused and boost your productivity with our Pomodoro app. Experience the power of time management as you work in intervals, giving your mind the breaks it needs to recharge. Perfect for students, professionals, and anyone looking to maximize their efficiency!`,
+};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          'min-h-dvh bg-background font-sans antialiased',
-          fontSans.variable,
-        )}
-      >
-        <AppProviders>{children}</AppProviders>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }

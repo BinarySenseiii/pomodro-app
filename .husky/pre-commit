@@ -1,2 +1,1 @@
-yarn lint:fix
-yarn format:write
+pnpm lint-staged
