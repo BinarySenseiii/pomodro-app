@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto+Slab:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --background-color: #1E213F;
+    --orange-timer: #f87070;
+    --blue-timer: #70f3f8;
+    --purple-timer: #d881f8;
+    --font-color: #D7E0FF;
+    --ui-components: #161932;
+    --menu-color: #ffffff;
+    --settings-components: #EFF1FA;
+}
