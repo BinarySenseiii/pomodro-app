@@ -16,7 +16,9 @@ module.exports = {
         'font-color' : 'var(--font-color)',
         'ui-components' : 'var(--ui-components)',
         'menu-color' : 'var(--menu-color)',
-        'settings-components' : 'var(--setings-components)'
+        'settings-components' : 'var(--setings-components)',
+        'gradient-color-1' : 'var(--gradient-color-1)',
+        'gradient-color-2' : 'var(--gradient-color-2)'
       }
     },
   },
