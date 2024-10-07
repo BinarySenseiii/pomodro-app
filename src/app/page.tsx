@@ -4,10 +4,10 @@ import svgSettings from './assets/Shape 2.svg';
 
 export default function Home() {
   return (
-    <div className="flex justify-around items-center flex-col bg-bg-color h-screen w-full">
-      <h1 className="font-kumbh-sans text-font-color font-bold text-3xl">pomodoro</h1>
-      <div className="flex justify-between items-center bg-ui-components rounded-full p-1 text-font-color font-bold w-96">
-        <h2 className="bg-orange-timer p-4 rounded-full text-ui-components">pomodoro</h2>
+    <div className="flex justify-around items-center flex-col h-dvh">
+      <h1 className="font-bold text-3xl">Pomodoro</h1>
+      <div className="flex justify-between items-center bg-coral-pink rounded-full p-1 text-font-color font-bold w-96">
+        <h2 className="bg-primary p-4 rounded-full text-ui-components">pomodoro</h2>
         <h2 className="p-4">short break</h2>
         <h2 className="p-4">long break</h2>
       </div>
